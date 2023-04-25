@@ -1,0 +1,17 @@
+.tilesContainer {
+  @apply bg-pale-yellow w-full flex flex-wrap justify-between;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.pennyTileContainer {
+  // --size: calc((100vw - 23px) / 26);
+  width: 100%;
+  overflow: hidden;
+  height: var(--size);
+  width: var(--size);
+  padding: 1px;
+}
+.pennyTile {
+  width: 100%;
+}
