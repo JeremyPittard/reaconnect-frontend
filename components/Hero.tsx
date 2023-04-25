@@ -20,8 +20,10 @@ const Hero = () => {
           Not a problem
         </h2>
         <p className="mb-7 max-w-md mx-auto">
+          {`
           With ReaConnect, you can let homeowners know you're interested in
           buying their property and see if they're down to sell. Easy as that!
+          `}
         </p>
         <WaitlistForm />
       </motion.div>
