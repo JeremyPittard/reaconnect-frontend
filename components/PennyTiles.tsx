@@ -18,9 +18,13 @@ const PennyTiles = () => {
       animate="show"
       className={styles.tilesContainer}
     >
-      <div>
-        <img src="/img/bg.svg" alt="" />
-      </div>
+      <Image
+        src="/img/bg.svg"
+        alt="#"
+        fill
+        objectFit="cover"
+        objectPosition="top"
+      />
     </motion.div>
   );
 };
