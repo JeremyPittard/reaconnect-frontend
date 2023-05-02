@@ -1,6 +1,6 @@
 const ExpandClaim = () => {
   return (
-    <section className="my-40  max-w-xs md:max-w-3xl mx-auto">
+    <section className="my-40 max-w-xs md:max-w-3xl mx-auto">
       <h1 className="text-3xl lg:text-5xl bold mb-7 mx-auto">
         {`
         At ReaConnect, we believe that many real estate assets are "always for
