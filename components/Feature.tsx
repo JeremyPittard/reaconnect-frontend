@@ -1,13 +1,25 @@
 import React from "react";
 import WaitlistForm from "./WaitlistForm";
+import { motion } from "framer-motion";
+import styles from "../styles/feature.module.scss";
 
 const Feature = () => {
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
-    <section>
-      <div className="mx-auto mb-40 max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="bg-mustard p-8 md:p-12 lg:px-16 lg:py-24">
-            <div className="mx-auto max-w-xl text-left">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-150px" }}
+      transition={{ duration: 0.3 }}
+    >
+      <div className={styles.wrap}>
+        <div className={styles.ogrid}>
+          <div className={styles.shape}>
+            <div className="mx-auto max-w-xl text-left flex flex-col items-baseline justify-center h-full">
               <h2 className="text-2xl font-bold md:text-3xl">
                 Seen a house you love? Let it know!
               </h2>
@@ -24,22 +36,14 @@ const Feature = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2">
-            <img
-              alt="Student"
-              src="https://images.unsplash.com/photo-1621274790572-7c32596bc67f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80"
-              className="h-40 w-full object-cover sm:h-56 md:h-full"
-            />
+          <div className={styles.imageGrid}>
+            <img alt="Student" src="/img/domes.svg" className={styles.img} />
 
-            <img
-              alt="Student"
-              src="https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-              className="h-40 w-full object-cover sm:h-56 md:h-full"
-            />
+            <img alt="Student" src="/img/arch.svg" className={styles.img} />
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

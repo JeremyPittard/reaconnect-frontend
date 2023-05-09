@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+
 const ExpandClaim = () => {
   return (
-    <section className="my-40 max-w-xs md:max-w-3xl mx-auto">
+    <motion.section
+      className="my-24 xl:my-40 max-w-xs md:max-w-3xl mx-auto"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-150px" }}
+      transition={{ duration: 0.3 }}
+    >
       <h1 className="text-3xl lg:text-5xl bold mb-7 mx-auto">
         {`
         At ReaConnect, we believe that many real estate assets are "always for
@@ -18,7 +26,7 @@ const ExpandClaim = () => {
         home or rental property. Sign up now for updates and launch information!
         `}
       </p>
-    </section>
+    </motion.section>
   );
 };
 
