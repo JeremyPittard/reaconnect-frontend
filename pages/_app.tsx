@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
             --garamond-font: ${ebGaramond.style.fontFamily};
           `}
       </style>
-      {/* <PageHeader /> */}
+      <PageHeader />
       <AnimatePresence
         mode="wait"
         initial={true}
