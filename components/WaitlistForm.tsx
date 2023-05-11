@@ -37,7 +37,7 @@ const WaitlistForm = ({ formName }: { formName?: string }) => {
     <form
       name={formName ? `waitlist-form-${formName}` : "waitlist-form"}
       onSubmit={(event) => handleFormSubmission(event)}
-      className="max-w-xd md:max-w-md mx-auto flex flex-col md:block"
+      className="max-w-xd md:max-w-md flex flex-col md:block"
     >
       <label
         htmlFor={formName ? `email-${formName}` : `email`}
