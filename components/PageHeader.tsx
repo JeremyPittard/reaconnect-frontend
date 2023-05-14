@@ -6,7 +6,7 @@ const PageHeader = () => {
     <header>
       <nav className="max-w-7xl mx-auto">
         <ul className="flex gap-4 items-end py-2">
-          <li>
+          <li className="mr-auto">
             <Link href={"/"}>
               <Image
                 src="/img/logo.svg"
@@ -20,7 +20,7 @@ const PageHeader = () => {
             <Link href={"/investors"}>Investors</Link>
           </li>
           <li>
-            <Link href={"/investors"}>Service Providers</Link>
+            <Link href={"/service-providers"}>Service Providers</Link>
           </li>
         </ul>
       </nav>

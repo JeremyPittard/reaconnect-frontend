@@ -1,5 +1,5 @@
 .customButton {
-  @apply bg-storm-green text-pale-yellow px-3 py-2 ml-1 rounded-tl-md rounded-bl-2xl rounded-tr-2xl;
+  @apply bg-storm-green text-pale-yellow px-3 py-2 ml-1 rounded-tl-md rounded-bl-2xl rounded-tr-2xl max-w-max;
 
   transition: var(--standard-transition);
   &:hover {

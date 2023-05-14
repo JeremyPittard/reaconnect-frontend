@@ -24,7 +24,7 @@ const CustomButton = ({
     <Link
       className={styles.customButton}
       href={linkAddress}
-      target={linkTarget}
+      target={`_${linkTarget}`}
     >
       {children}
     </Link>

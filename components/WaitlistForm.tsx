@@ -36,6 +36,7 @@ const WaitlistForm = ({ formName }: { formName?: string }) => {
   return (
     <form
       name={formName ? `waitlist-form-${formName}` : "waitlist-form"}
+      id={formName ? `waitlist-form-${formName}` : "waitlist-form"}
       onSubmit={(event) => handleFormSubmission(event)}
       className="max-w-xd md:max-w-md flex flex-col md:block"
     >
