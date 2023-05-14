@@ -28,7 +28,9 @@ const TwoBenefit = () => {
             </p>
 
             <div className="mt-6 sm:-mx-2">
-              <CustomButton buttonType="link">Join the waitlist</CustomButton>
+              <CustomButton buttonType="link" linkAddress="/" linkTarget="self">
+                Join the waitlist
+              </CustomButton>
             </div>
           </div>
         </div>
