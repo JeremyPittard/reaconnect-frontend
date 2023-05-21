@@ -3,6 +3,8 @@ import WaitlistForm from "./WaitlistForm";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  console.log(process.env.NEXT_PUBLIC_BADD, "add");
+
   return (
     <section className="flex flex-col items-center h-screen justify-center">
       <motion.div

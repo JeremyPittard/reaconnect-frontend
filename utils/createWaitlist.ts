@@ -4,8 +4,7 @@ export const addToList = (emailAddress: string, listID: number = 3) => {
     headers: {
       accept: "application/json",
       "content-type": "application/json",
-      "api-key":
-        "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",
+      "api-key": process.env.NEXT_PUBLIC_BKEY,
     },
     body: JSON.stringify({
       listIds: [listID],
@@ -15,7 +14,7 @@ export const addToList = (emailAddress: string, listID: number = 3) => {
     }),
   };
 
-  return fetch("https://api.sendinblue.com/v3/contacts", options);
+  return fetch(`${process.env.NEXT_PUBLIC_BADD}`, options);
 };
 
 export const handleErrors = (response: Response) => {
