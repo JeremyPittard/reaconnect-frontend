@@ -13,7 +13,8 @@ export const addToList = (emailAddress: string, listID: number = 3) => {
       attributes: { INVESTING: true, BUYING: true, SELLING: false },
     }),
   };
-
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return fetch(`${process.env.NEXT_PUBLIC_BADD}`, options);
 };
 
