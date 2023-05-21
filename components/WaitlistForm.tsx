@@ -94,12 +94,7 @@ const WaitlistForm = ({ formName }: { formName?: string }) => {
       </form>
     );
   }
-
-  return (
-    <>
-      <p>something went wrong</p>
-    </>
-  );
+  return null;
 };
 
 export default WaitlistForm;
