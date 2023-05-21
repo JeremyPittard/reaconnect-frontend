@@ -41,59 +41,58 @@ const WaitlistForm = ({ formName }: { formName?: string }) => {
 
   if (isSubmitting) {
     return <ThreeDotsWave />;
-  } else {
-    if (sumbissionStatus == "failed") {
-      return (
-        <p className="bold border bg-storm-green text-pale-yellow  py-2 px-4">
-          Sorry there has been an error submitting your email,
-          <br /> please try again later
-        </p>
-      );
-    }
-    if (sumbissionStatus == "success") {
-      return (
-        <p className="bold border bg-storm-green text-pale-yellow p-2">
-          Thanks for joining us Keep your eyes peeled for news!
-        </p>
-      );
-    }
-    if (sumbissionStatus == "not-submitted") {
-      return (
-        <form
-          name={formName ? `waitlist-form-${formName}` : "waitlist-form"}
-          id={formName ? `waitlist-form-${formName}` : "waitlist-form"}
-          onSubmit={(event) => handleFormSubmission(event)}
-          className="max-w-xd md:max-w-md flex flex-col md:block"
+  }
+  if (sumbissionStatus == "failed") {
+    return (
+      <p className="bold border bg-storm-green text-pale-yellow  py-2 px-4">
+        Sorry there has been an error submitting your email,
+        <br /> please try again later
+      </p>
+    );
+  }
+  if (sumbissionStatus == "success") {
+    return (
+      <p className="bold border bg-storm-green text-pale-yellow p-2">
+        Thanks for joining us Keep your eyes peeled for news!
+      </p>
+    );
+  }
+  if (sumbissionStatus == "not-submitted") {
+    return (
+      <form
+        name={formName ? `waitlist-form-${formName}` : "waitlist-form"}
+        id={formName ? `waitlist-form-${formName}` : "waitlist-form"}
+        onSubmit={(event) => handleFormSubmission(event)}
+        className="max-w-xd md:max-w-md flex flex-col md:block"
+      >
+        <label
+          htmlFor={formName ? `email-${formName}` : `email`}
+          id={formName ? `email-label-${formName}` : `email-label`}
         >
-          <label
-            htmlFor={formName ? `email-${formName}` : `email`}
-            id={formName ? `email-label-${formName}` : `email-label`}
-          >
-            enter your email for product updates below
-          </label>
-          <input
-            id={formName ? `email-${formName}` : `email`}
-            type="email"
-            required
-            onChange={(event) => setEmailAddress(event.target.value)}
-            className="px-3 py-2 mr-1 mb-2 bg-pale-yellow border border-storm-green outline-storm-green focus-visible:ring-red-500"
-          />
-          <label
-            htmlFor={formName ? `name-${formName}` : `name`}
-            id={formName ? `name-label-${formName}` : `name-label`}
-            className="hidden"
-          >
-            enter your email for product updates below
-          </label>
-          <input
-            id={formName ? `name-${formName}` : `name`}
-            type="hidden"
-            onChange={(event) => setName(event.target.value)}
-          />
-          <CustomButton buttonType="submit">join the waitlist</CustomButton>
-        </form>
-      );
-    }
+          enter your email for product updates below
+        </label>
+        <input
+          id={formName ? `email-${formName}` : `email`}
+          type="email"
+          required
+          onChange={(event) => setEmailAddress(event.target.value)}
+          className="px-3 py-2 mr-1 mb-2 bg-pale-yellow border border-storm-green outline-storm-green focus-visible:ring-red-500"
+        />
+        <label
+          htmlFor={formName ? `name-${formName}` : `name`}
+          id={formName ? `name-label-${formName}` : `name-label`}
+          className="hidden"
+        >
+          enter your email for product updates below
+        </label>
+        <input
+          id={formName ? `name-${formName}` : `name`}
+          type="hidden"
+          onChange={(event) => setName(event.target.value)}
+        />
+        <CustomButton buttonType="submit">join the waitlist</CustomButton>
+      </form>
+    );
   }
 };
 

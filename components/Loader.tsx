@@ -5,7 +5,6 @@ const loadingContainer = {
   height: "6rem",
   display: "flex",
   justifyContent: "space-around",
-  margin: "0 auto",
 };
 
 const loadingCircle = {
