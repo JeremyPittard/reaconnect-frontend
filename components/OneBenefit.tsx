@@ -11,7 +11,7 @@ const OneBenefit = () => {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: "-250px" }}
+        viewport={{ once: true }}
         transition={{ duration: 0.3 }}
       >
         <div className="container flex flex-col items-center py-24 xl:py-40 mx-auto xl:flex-row">

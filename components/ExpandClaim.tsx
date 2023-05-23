@@ -7,7 +7,7 @@ const ExpandClaim = () => {
       className="py-24 xl:py-40 max-w-xs md:max-w-3xl mx-auto relative"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true, margin: "-250px" }}
+      viewport={{ once: true }}
       transition={{ duration: 0.3 }}
     >
       <h1 className="text-3xl lg:text-5xl bold mb-7 mx-auto bg-pale-yellow">

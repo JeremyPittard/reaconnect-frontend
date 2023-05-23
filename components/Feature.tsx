@@ -11,7 +11,7 @@ const Feature = () => {
       transition={{ duration: 0.3 }}
       className="py-24 xl:py-40"
     >
-      <div className="bg-mustard rounded-sm max-w-xs md:max-w-3xl mx-auto p-3 ">
+      <div className="bg-mustard rounded-md max-w-xs md:max-w-3xl mx-auto p-3 ">
         <h2 className="text-2xl font-bold md:text-3xl ">
           Seen a house you love? Let it know!
         </h2>
