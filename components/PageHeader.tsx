@@ -4,7 +4,7 @@ import Link from "next/link";
 const PageHeader = () => {
   return (
     <header>
-      <nav className="max-w-7xl mx-auto">
+      <nav className="max-w-7xl mx-auto px-4">
         <ul className="flex gap-4 items-end py-2">
           <li className="mr-auto">
             <Link href={"/"}>

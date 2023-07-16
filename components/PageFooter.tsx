@@ -5,8 +5,8 @@ import React from "react";
 const PageFooter = () => {
   return (
     <footer>
-      <nav className="max-w-7xl border-t border-storm-green mx-auto text-right">
-        <ul className="flex gap-4 items-end py-2 mx-auto max-w-md">
+      <nav className="max-w-7xl border-t border-storm-green mx-auto text-right px-4">
+        <ul className="flex gap-4 items-end py-2 mx-auto max-w-xs md:max-w-md">
           <li>
             <Link href={"/"}>
               <Image

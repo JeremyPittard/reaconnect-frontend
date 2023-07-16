@@ -7,7 +7,7 @@ const Feature = () => {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true, margin: "-250px" }}
+      viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.3 }}
       className="py-24 xl:py-40"
     >

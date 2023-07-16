@@ -13,6 +13,7 @@ const OneBenefit = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.3 }}
+        className="max-w-xs md:max-w-7xl mx-auto relative"
       >
         <div className="container flex flex-col items-center py-24 xl:py-40 mx-auto xl:flex-row">
           <div className="flex justify-center xl:w-1/2">

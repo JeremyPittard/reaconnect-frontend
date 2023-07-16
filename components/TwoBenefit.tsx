@@ -11,8 +11,9 @@ const TwoBenefit = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.3 }}
+      className="max-w-xs md:max-w-7xl mx-auto relative"
     >
-      <div className="container flex flex-col items-center py-24 xl:py-40 mx-auto xl:flex-row">
+      <div className="container flex flex-col-reverse items-center py-24 xl:py-40 mx-auto xl:flex-row">
         <div className="flex flex-col items-center mt-6 xl:items-end xl:w-1/2 xl:mt-0">
           <div className="">
             <h2 className="text-3xl lg:text-5xl bold tracking-tight">
