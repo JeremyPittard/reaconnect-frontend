@@ -38,7 +38,7 @@ export default function ServiceProviders() {
         viewport={{ once: true }}
         transition={{ duration: 0.3 }}
       >
-        <p className="text-3xl lg:text-5xl bold mb-7 mx-auto bg-pale-yellow">
+        <p>
           If you’re an estate agent, mortgage broker, settlement agent and
           interested in partnering with us, send us a message and we’ll get in
           touch prior to launching to discuss our value proposition. founders,

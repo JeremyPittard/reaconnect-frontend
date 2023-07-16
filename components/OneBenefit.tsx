@@ -15,8 +15,8 @@ const OneBenefit = () => {
         transition={{ duration: 0.3 }}
         className="max-w-xs md:max-w-7xl mx-auto relative"
       >
-        <div className="container flex flex-col items-center py-24 xl:py-40 mx-auto xl:flex-row">
-          <div className="flex justify-center xl:w-1/2">
+        <div className="container flex flex-col items-center py-24 md:py-40 mx-auto md:flex-row">
+          <div className="flex justify-center md:w-1/2">
             <img
               className="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
               src="/img/yellow-circle.svg"
@@ -24,7 +24,7 @@ const OneBenefit = () => {
             />
           </div>
 
-          <div className="flex flex-col justify-center items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
+          <div className="flex flex-col justify-center items-center mt-6 md:items-start md:w-1/2 md:mt-0">
             <h2 className="text-3xl lg:text-5xl bold tracking-tight">
               Make the first move!
             </h2>
