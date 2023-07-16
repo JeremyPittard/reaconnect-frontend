@@ -22,7 +22,11 @@ const InvestorHero = () => {
           Investing in <br />
           ReaConnect
         </h1>
-        <CustomButton buttonType="link" linkAddress="#" linkTarget="self">
+        <CustomButton
+          buttonType="link"
+          linkAddress="#investors"
+          linkTarget="self"
+        >
           find out more
         </CustomButton>
       </motion.div>

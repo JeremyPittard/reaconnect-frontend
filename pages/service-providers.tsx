@@ -14,7 +14,10 @@ export default function ServiceProviders() {
         viewport={{ once: true }}
         transition={{ duration: 0.3 }}
       >
-        <h2 className="text-3xl lg:text-5xl bold mb-7 mx-auto bg-pale-yellow">
+        <h2
+          className="text-3xl lg:text-5xl bold mb-7 mx-auto bg-pale-yellow"
+          id="sp"
+        >
           Service Providers:
         </h2>
         <p>

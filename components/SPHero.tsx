@@ -24,7 +24,7 @@ const SPHero = () => {
           work in realestate, settlements or just want to get your business involved? 
           `}
         </p>
-        <CustomButton buttonType="link" linkAddress="#" linkTarget="self">
+        <CustomButton buttonType="link" linkAddress="#sp" linkTarget="self">
           find out more
         </CustomButton>
       </motion.div>
