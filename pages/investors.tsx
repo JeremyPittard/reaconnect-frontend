@@ -45,7 +45,7 @@ export default function Investors() {
         transition={{ duration: 0.3 }}
       >
         <h2 className="text-3xl lg:text-5xl bold mb-7 mx-auto bg-pale-yellow">
-          Our company is focussed on solving this problem:
+          Our company is focused on solving this problem:
         </h2>
         <p>
           Formalising the exchange of buyers/renters’ intent and homeowners’
