@@ -13,6 +13,8 @@ export default function Document() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="reaconnect.co/img/logo.png" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
       </Head>
       <body>
         <Main />
