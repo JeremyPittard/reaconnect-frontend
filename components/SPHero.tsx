@@ -21,7 +21,7 @@ const SPHero = () => {
         <h1 className="text-6xl lg:text-8xl bold mb-7 mx-auto">Get Involved</h1>
         <p className="mb-7 max-w-xs md:max-w-md">
           {`
-          work in realestate, settlements or just want to get your business involved? 
+          work in real estate, settlements or just want to get your business involved? 
           `}
         </p>
         <CustomButton buttonType="link" linkAddress="#sp" linkTarget="self">
