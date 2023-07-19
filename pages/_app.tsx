@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
 import { Atkinson_Hyperlegible, EB_Garamond } from "next/font/google";
 import { useRouter } from "next/router";
+import { Analytics } from '@vercel/analytics/react';
 
 const atkinson = Atkinson_Hyperlegible({ weight: "400", subsets: ["latin"] });
 const ebGaramond = EB_Garamond({ weight: "400", subsets: ["latin"] });
@@ -36,6 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} key={router.pathname} />
       </AnimatePresence>
       <PageFooter />
+      <Analytics />
     </>
   );
 }
